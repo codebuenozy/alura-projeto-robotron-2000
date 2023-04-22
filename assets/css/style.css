@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url(../img/fundo.jpg);
+    background: url(../img/fundo.jpg) no-repeat;
     background-position: center center;
     background-size: cover cover;
     padding: 0;
@@ -17,7 +17,8 @@ body {
     font-weight: 300;
 }
 
-body, input {
+body,
+input {
     font-family: 'Teko', sans-serif;
 }
 
@@ -55,11 +56,11 @@ main {
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: rgba(255,255,255,0.8)
+    color: rgba(255, 255, 255, 0.8)
 }
 
 .box {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
     height: 80%;
@@ -72,7 +73,8 @@ main {
 }
 
 .montador {
-    height: 100%;;
+    height: 100%;
+    ;
 }
 
 .montador-conteudo {
@@ -210,9 +212,10 @@ main {
 }
 
 @media screen and (max-width: 1600px) {
-    body { 
+    body {
         font-size: 14px;
     }
+
     main {
         width: 90vw;
         height: 80vh;
@@ -221,7 +224,7 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-    body { 
+    body {
         font-size: 13px;
     }
 
@@ -230,4 +233,55 @@ main {
         height: 80vh;
         margin: 10vh auto;
     }
+}
+
+/****************************** Cor do Robô *****/
+.botoes {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.alterar {
+    margin: 2px;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--main-preto);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.azul {
+    color: white;
+    background: linear-gradient(90deg, rgba(0, 44, 162, 1) 0%, rgba(0, 82, 255, 1) 100%);
+}
+
+.amarelo {
+    color: black;
+    background: linear-gradient(90deg, rgba(195, 142, 34, 1) 37%, rgba(253, 187, 45, 1) 84%);
+}
+
+.branco {
+    color: black;
+    background-color: white;
+}
+
+.preto {
+    color: white;
+    background: linear-gradient(90deg, rgba(7, 8, 7, 1) 0%, rgba(99, 99, 99, 1) 100%);
+}
+
+.rosa {
+    color: black;
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(208, 65, 176, 1) 100%);
+}
+
+.vermelho {
+    color: black;
+    background: linear-gradient(90deg, rgba(149, 17, 32, 1) 0%, rgba(246, 45, 79, 1) 100%);
 }

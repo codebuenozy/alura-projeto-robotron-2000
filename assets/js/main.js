@@ -68,6 +68,11 @@ function atualizaEstatisticas(peca) {
     });
 };
 
+// Função para trocar a imagem do Robô, utilizei template string para selecionar a cor
+function trocaImagem(cor){
+    document.querySelector(".robo").src=`./assets/img/robotron-${cor}.png`;
+ };
+
 // Função que exibe um alerta na tela ao clicar na imagem do Robô
 function msgRobo() {
     alert("Olá humano, eu sou o Robotron 2000!!!");
